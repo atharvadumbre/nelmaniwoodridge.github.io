@@ -13,9 +13,13 @@
   <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <!-- <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,7 +70,7 @@
       <div class="container">
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">A Culinary Journey <br>Through India</h1>
+            <h1 data-aos="fade-up" class="heading-title">A Culinary Journey <br>Through India</h1>
             <p data-aos="fade-up" data-aos-delay="100">Indulge in Authentic Indian Flavors, from Sizzling Tandoori to Aromatic Biryanis, Served with Tradition & Passion.</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <a href="#menu" class="btn-get-started">View Menu</a>
@@ -86,14 +90,14 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
   
-        <p><span>Learn More</span> <span class="description-title">About Us</span></p>
+        <p><span>About Us</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid about-image" alt="">
 
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
@@ -102,12 +106,24 @@
                 A Taste of India, Crafted with Passion
               </p>
               <ul>
-                <li><span>Authentic Flavors: Experience the true essence of Indian cuisine with our carefully curated spices and traditional recipes.</span></li>
-                <li></i> <span>Diverse Menu: From sizzling tandoori and rich curries to aromatic biryanis and crispy dosas, we offer something for every palate.</span></li>
-                <li></i> <span>Unforgettable Experience: Immerse yourself in warm hospitality and a vibrant dining atmosphere that celebrates India’s rich food culture.</span></li>
+                <li><span>&#x2714; Authentic Flavors: Experience the true essence of Indian cuisine with our carefully curated spices and traditional recipes.</span></li>
+
+                <li><span>&#x2714; Diverse Menu: From sizzling tandoori and rich curries to aromatic biryanis and crispy dosas, we offer something for every palate.</span></li>
+
+                <li><span>&#x2714; Unforgettable Experience: Immerse yourself in warm hospitality and a vibrant dining atmosphere that celebrates India’s rich food culture.</span></li>
               </ul>
+
+<!-- 
+              <ul>
+                <li><span> &#x2714; Authentic Flavors</span></li>
+                <li></i> <span> &#x2714; Diverse Menu</span></li>
+                <li></i> <span> &#x2714; Unforgettable Experience</span></li>
+              </ul> -->
+
               <p>
-                At Nelmani Indian Cuisine, every meal is a celebration of taste, tradition, and togetherness. Whether you're indulging in your favorite dish or exploring new flavors, we promise an experience that lingers beyond the last bite.
+                At Nelmani Indian Cuisine, every meal is a celebration of taste, tradition, and togetherness. 
+              </p>
+              <p>Whether you're indulging in your favorite dish or exploring new flavors, we promise an experience that lingers beyond the last bite.
               </p>
               <div class="book-a-table">
                 <h3>Book a Table</h3>
@@ -128,7 +144,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span>Check Our</span> <span class="description-title">Menu</span></p>
+        <p><span>Menu</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -187,6 +203,11 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dosa">
               <h4>Dosa</h4>
+            </a>
+          </li><!-- End tab nav item -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-sides">
+              <h4>Sides</h4>
             </a>
           </li><!-- End tab nav item -->
           <li class="nav-item">
@@ -359,7 +380,7 @@
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-6 menu-item">
+              <div class="col-lg-4 menu-item">
                 <h4>Nelmani Spicy Chicken </h4>
                 <p class="ingredients">
                   A chef's special spicy chicken dish with bold flavors.
@@ -369,7 +390,28 @@
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-6 menu-item">
+
+
+              <div class="col-lg-4 menu-item">
+                <h4>Fish Amritsari </h4>
+                <p class="ingredients">
+                  Indian style gluten free fish fritters
+                </p>
+                <p class="price">
+                  $13.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Crispy calamari </h4>
+                <p class="ingredients">
+                  Deep fried calamari with Indian spices
+                </p>
+                <p class="price">
+                  $13.99
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-12 menu-item">
                 <h4>Eral Thokku </h4>
                 <p class="ingredients">
                   A dry, spicy shrimp dish cooked with a blend of aromatic spices.
@@ -378,6 +420,7 @@
                   $14.99
                 </p>
               </div><!-- Menu Item -->
+
             </div>
           </div><!-- End nonvegapps Menu Content -->
 
@@ -1111,8 +1154,61 @@
             </div>
           </div><!-- End Dosa Menu Content -->
 
-          <div class="tab-pane fade" id="menu-breads">
 
+          <div class="tab-pane fade" id="menu-sides">
+            <div class="tab-header text-center">
+              <h3>Sides</h3>
+            </div>
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <h4>Mango chutney</h4>
+                <p class="price">
+                  $3.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Raita</h4>
+                <p class="price">
+                  $3.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Papad</h4>
+                <p class="price">
+                  $3.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Pickle</h4>
+                <p class="price">
+                  $3.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Rice</h4>
+                <p class="price">
+                  $4.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>French Fries</h4>
+                <p class="price">
+                  $5.99
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-4 menu-item">
+                <h4>Masala Fries</h4>
+                <p class="price">
+                  $6.99
+                </p>
+              </div><!-- Menu Item -->
+              
+            </div>
+          </div><!-- End Dosa Menu Content -->
+
+
+          <div class="tab-pane fade" id="menu-breads">
             <div class="tab-header text-center">
               <h3>Tandoori Breads</h3>
             </div>
@@ -1345,7 +1441,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span>Check</span> <span class="description-title">Our Gallery</span></p>
+        <p><span>Gallery</span></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1432,7 +1528,7 @@
             <h4>Contact</h4>
             <p>
               <strong>Phone:</strong> <span>+1 (201) 728 4044</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Email:</strong> <span>nelmaniindiancuisine@gmail.com</span><br>
             </p>
           </div>
         </div>
@@ -1463,7 +1559,7 @@
 
     <div class="container copyright text-center mt-4">
       <div class="credits">
-        Designed by <a href="https://atharvadumbre.com/">Atharva Dumbre</a> using <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://atharvadumbre.com/">Atharva Dumbre</a>
       </div>
     </div>
 
